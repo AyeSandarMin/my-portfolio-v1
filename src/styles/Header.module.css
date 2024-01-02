@@ -1,0 +1,14 @@
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(45, 13%, 94%);
+}
+
+.menus{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex: 1;
+    background: hsl(45, 13%, 94%);
+}
