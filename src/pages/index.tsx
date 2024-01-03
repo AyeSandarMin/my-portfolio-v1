@@ -21,13 +21,7 @@ export default function Home() {
       setChangeColor((prevState) => !prevState);
     }, 5000);
     return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideUp(true);
-    }, 800);
-  }, []);
+  }, []); 
 
   return (
     <>
