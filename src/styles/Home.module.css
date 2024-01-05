@@ -333,6 +333,9 @@
   font-size: 20px;
   display: inline-block;
  }
+ .socialIcon span{
+    margin-bottom: -2px;
+ }
 
  @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
