@@ -42,10 +42,10 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
                   ease: [0, 0.71, 0.2, 1.01],
                 }}
               >
-                {/* <Link
+                <Link
                   href={item.url}
                   target="_blank"
-                > */}
+                >
                   <div
                     className={styles.photoContainer}
                     style={{
@@ -61,7 +61,7 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
                       </div>
                     </div>
                   </div>
-                {/* </Link> */}
+                </Link>
               </motion.div>
             );
           })}
