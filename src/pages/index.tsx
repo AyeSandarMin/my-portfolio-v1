@@ -59,8 +59,8 @@ const Home: React.FC<HomeProps> = ({ sectionRefs }) => {
             <h1>{displayedText}</h1>
             <p>
               I <span>specialize</span> in building exceptional and accessible
-              digital experiences <br /> for{" "}
-              <span>websites and web applications</span>,
+              digital experiences for {" "}
+              <span>websites </span>and <span>web applications</span>,
               <br /> bringing <span>creativity</span> and{" "}
               <span>functionality</span> together seamlessly.
             </p>
