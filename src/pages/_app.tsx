@@ -86,7 +86,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <div ref={scope} className="menu-wrapper">
-        <Menus scrollToSection={scrollToSection} />
+        <Menus scrollToSection={scrollToSection} isOpen={setIsOpen}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)} />
       </div>
       <Layout>

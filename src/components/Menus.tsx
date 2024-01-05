@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 
 interface MenuProps {
+  isOpen: (isOpen: boolean) => void,
   scrollToSection: (index: number) => void;
 }
 
-const Menus: React.FC<MenuProps> = ({ scrollToSection }) => {
+const Menus: React.FC<MenuProps> = ({ isOpen, scrollToSection }) => {
   const handleClick = (index: number) => {
     scrollToSection(index);
+    isOpen (!isOpen);
   };
 
   return (
