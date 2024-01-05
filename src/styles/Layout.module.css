@@ -2,3 +2,9 @@
     max-width: 1320px;
     margin: 0 auto;
 }
+.footerWrapper{
+    text-align: center;
+    color: rgb(78, 31, 55);
+    margin: 30px;
+    background: transparent;
+}

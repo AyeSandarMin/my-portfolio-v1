@@ -108,30 +108,15 @@ a {
 }
 
 .leftPainting {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   position: fixed;
-  padding: 0;
-  width: 100%;
-}
-
-.leftPainting::before {
-  background: rgb(238 156 240 / 20%) ;
-  border-radius: 50%;
   width: 700px;
-  height: 500px;
-  margin-left: -100px;
-}
-
-.leftPainting::before
- {
-  top: -220px;
-  content: '';
-  right: 62%;
-  left: -200px;
-  position: absolute;
+  height: 700px;
   filter: blur(50px);
+  background: rgb(238 156 240 / 20%) ;
+  top: -290px;
+  z-index: 10;
+  left: -250px;
+  border-radius: 50%
 }
 
 .rightPainting{
@@ -145,4 +130,92 @@ a {
   right: -250px;
   border-radius: 50%;
 }
+
+.menu-wrapper{
+  position: relative;
+  z-index: 9999;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to right, #9c4e65, #e8a2b7);
+  padding-top: 40px;
+  transform: translateX(100%);
+  will-change: transform;
+  border-bottom-left-radius: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 15px 15px 80px;
+  text-align: center;
+}
+
+li {
+  display: block;
+  transform-origin: -20px 50%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  will-change: transform, opacity, filter;
+  cursor: pointer;
+}
+
+li a:hover{
+  color: rgb(78, 31, 55);
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(156 78 101);
+  padding: 10px;
+}
+
+/* button path {
+  fill: var(--background);
+}
+
+input {
+  accent-color: var(--accent);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 50px;
+  align-items: center;
+} */
+
+
+.header-name{
+  padding-top: 25px;
+  padding-left: 25px;
+  color: rgb(156 78 101);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap');

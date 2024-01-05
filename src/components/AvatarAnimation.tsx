@@ -11,7 +11,7 @@ const AvatarAnimation: React.FC = () => {
         loop
         animationData={avatarJson}
         play
-        style={{ width: '100%', height: 450 }}
+        style={{ width: '100%' }}
       />
     </div>
   );
