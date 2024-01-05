@@ -144,7 +144,7 @@ export const projects = [
     },
     {
       id: 24,
-      name: "M.I.C.E matters Private Limited",
+      name: "M.I.C.E matters",
       url: "https://www.micematters.com/",
       photo: "/project-photos/micematters.png",
     },

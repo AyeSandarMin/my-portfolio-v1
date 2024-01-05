@@ -11,6 +11,7 @@ import {
 import MyProjects from "@/components/MyProjects";
 import { projects } from "../../public/data";
 import { easeInOut, motion } from "framer-motion";
+import AvatarAnimation from "@/components/AvatarAnimation";
 
 export default function Home() {
   const [changeColor, setChangeColor] = useState(false);
@@ -21,7 +22,7 @@ export default function Home() {
       setChangeColor((prevState) => !prevState);
     }, 5000);
     return () => clearInterval(intervalId);
-  }, []); 
+  }, []);
 
   return (
     <>
@@ -45,7 +46,7 @@ export default function Home() {
       >
         <div className={styles.introWrapper}>
           <div className={styles.intro}>
-            <h4>Hello,</h4>
+            <h4>Hi,</h4>
             <h1>
               I&apos;m Aye<span>!</span>
             </h1>
@@ -56,11 +57,6 @@ export default function Home() {
               <br /> bringing <span>creativity</span> and{" "}
               <span>functionality</span> together seamlessly.
             </p>
-            {/* <p>
-              A frontend developer with a passion for <br /> transforming
-              websites and web applications into <br /> stunning visual
-              experiences!
-            </p> */}
             <div className={styles.socialIconsWrapper}>
               <div className={styles.socialIcon}>
                 <a href="https://github.com/AyeSandarMin" target="_blank">
@@ -87,33 +83,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div style={{ position: "relative" }}>
-            <motion.div
-              // className={styles.box}
-              className={`${styles.avatarWrapper} ${
-                slideUp ? styles.slideUp : ""
-              } ${changeColor ? styles.changeColor : ""}`}
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -10, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <motion.img
-                src="/rounded-avatar.png"
-                width={420}
-                height={420}
-                className={styles.avatarImg}
-                alt="avatar"
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              />
-            </motion.div>
-
-            {/* <div className={styles.hiddenBg}></div> */}
-          </div>
+          <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <AvatarAnimation />
+          </motion.div>
           {/* <div className={styles.container}>
             <div className={styles.slideUp}>
               <img

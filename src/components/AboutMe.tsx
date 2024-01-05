@@ -63,9 +63,9 @@ const AboutMe = () => {
         </div>
       </div>
       <div className={styles.aboutMe}>
-        <h1>About Me</h1>
+        <h4>About Me</h4>
         <p>
-          Hi, My name is <span>Aye Sandar Min</span>, a frontend developer
+          Hello, My name is <span>Aye Sandar Min</span>, a frontend developer
           hailing from Myanmar.
         </p>
         <p>
@@ -85,7 +85,9 @@ const AboutMe = () => {
           My goal is to create websites and web apps that are not only
           functional but also seamless and visually appealing for end-users.{" "}
         </p>
-        <p>Fun Fact: I enjoy socializing with friends away from computer!</p>
+        <p style={{ paddingTop: 10 }}>
+          Fun Fact: I enjoy socializing with friends away from computer!
+        </p>
       </div>
     </div>
   );
