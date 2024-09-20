@@ -6,6 +6,36 @@ const AboutMe = () => {
   return (
     <div className={`${styles.aboutMeWrapper} ${styles.slideUp}`}>
       <div className={styles.exp}>
+      <div className={styles.expCard}>
+          <div>
+            <h4>
+              Frontend Developer ·{" "}
+              <span>
+                Globiance
+                <a href="https://globiance.com/" target="_blank">
+                  {" "}
+                  <ArrowSvg />
+                </a>
+              </span>
+            </h4>
+            <div className={styles.expYear}>Jan 2024 — Jun 2024 <span>( Contractor )</span></div>
+            <p>
+            Enhanced the existing <a href="https://exchange.globiance.com/" target="_blank">Globiance Exchange</a> by adding new features and resolving
+            bugs, improving platform functionality and performance. Developed a decentralized 
+            exchange (DEX) inspired by Uniswap, with wallet connectivity, token search, and 
+            swap functionality. Built features like pool creation and liquidity management. 
+            Integrated smart contract SDKs for secure blockchain interaction.
+            </p>
+            <div className={styles.expLanguages}>
+              <div>React</div>
+              <div>Redux</div>
+              <div>Next</div>
+              <div>Javascript</div>
+              <div>Typescript</div>
+              <div>Mantine</div>
+            </div>
+          </div>
+        </div>
         <div className={styles.expCard}>
           <div>
             <h4>
@@ -18,7 +48,7 @@ const AboutMe = () => {
                 </a>
               </span>
             </h4>
-            <div className={styles.expYear}>Sep 2019 — Current</div>
+            <div className={styles.expYear}>Sep 2019 — Nov 2023 ( Full-Time )</div>
             <p>
               Developed and styled interactive web solutions tailored for the
               travel and tour industries, blending functionality with visually
@@ -45,7 +75,7 @@ const AboutMe = () => {
                 </a>
               </span>
             </h4>
-            <div className={styles.expYear}>Oct 2018 — Aug 2019</div>
+            <div className={styles.expYear}>Oct 2018 — Aug 2019 ( Full-Time )</div>
             <p>
               Worked closely with senior developers to implement user interface
               enhancements and system features for School Management
