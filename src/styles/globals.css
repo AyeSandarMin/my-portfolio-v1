@@ -141,8 +141,8 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
   background: linear-gradient(to right, #9c4e65, #e8a2b7);
   padding-top: 40px;
   transform: translateX(100%);
@@ -169,7 +169,7 @@ li {
 }
 
 li a:hover{
-  color: rgb(78, 31, 55);
+  color: rgb(243, 236, 239);
 }
 
 ul,

@@ -21,11 +21,16 @@ const Menus: React.FC<MenuProps> = ({ isOpen, scrollToSection }) => {
         </li>
         <li>
           <motion.a whileTap={{ scale: 0.95 }} onClick={() => handleClick(1)}>
-            About Me
+            My Experience
           </motion.a>
         </li>
         <li>
           <motion.a whileTap={{ scale: 0.95 }} onClick={() => handleClick(2)}>
+            About Me
+          </motion.a>
+        </li>
+        <li>
+          <motion.a whileTap={{ scale: 0.95 }} onClick={() => handleClick(3)}>
             Projects
           </motion.a>
         </li>

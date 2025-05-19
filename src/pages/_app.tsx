@@ -60,6 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
   ];
 
   const scrollToSection = (index: number) => {

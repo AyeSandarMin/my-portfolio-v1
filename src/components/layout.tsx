@@ -9,7 +9,7 @@ const Layout = ({ children }: Props) => {
   return (
     <div className={styles.wrap}>
       <main>{children}</main>
-      <div className={styles.footerWrapper}>© 2024 Aye Sandar Min</div>
+      <div className={styles.footerWrapper}>© 2025 Aye Sandar Min</div>
     </div>
   );
 };

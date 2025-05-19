@@ -288,33 +288,38 @@
  }
  
  .aboutMeWrapper{
-  display: flex;
+  display: block;
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
   /* gap: 50px; */
   position: relative;
   z-index: 999;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-bottom: 60px;
 }
 
  .aboutMe{
+  padding: 90px 0 40px 0;
   color: #333333;
   /* flex: 0 0 calc(45% - 25px); */
-  padding-left: 50px;
+  /* padding-left: 50px; */
  }
 
  .aboutMe h4{
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 48px;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 25px;
   color: rgb(78, 31, 55);
+  text-align: center;
  }
 
  .aboutMe p{
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   font-weight: 400;
+  padding: 0px 15px;
+  text-align: center;
  }
 
  .aboutMe p span{
@@ -389,7 +394,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 15px 40px 15px 0px;
+  padding: 15px;
  }
 
  .expCard h4{
@@ -399,7 +404,7 @@
 
  .expCard p{
   padding-top: 18px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
  }
 
@@ -464,6 +469,7 @@
   .aboutMe{
     padding-left: 0;
     padding-bottom: 30px;
+    padding-top: 30px;
   }
   .expCard{
     padding: 30px 0 30px 0;

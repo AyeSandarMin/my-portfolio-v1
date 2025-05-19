@@ -12,6 +12,7 @@ import MyProjects from "@/components/MyProjects";
 import { projects } from "../../public/data";
 import { easeInOut, motion } from "framer-motion";
 import AvatarAnimation from "@/components/AvatarAnimation";
+import MyExp from "@/components/MyExp";
 
 interface HomeProps {
   sectionRefs: React.RefObject<HTMLDivElement>[];
@@ -70,14 +71,14 @@ const Home: React.FC<HomeProps> = ({ sectionRefs }) => {
                   <GithubOutlined />
                 </a>
               </div>
-              <div className={styles.socialIcon}>
+              {/* <div className={styles.socialIcon}>
                 <a
                   href="https://www.linkedin.com/in/aye-sandar-min/"
                   target="_blank"
                 >
                   <LinkedinOutlined />
                 </a>
-              </div>
+              </div> */}
               <div className={styles.socialIcon}>
                 <a href="https://www.instagram.com/__ayesdm__/" target="_blank">
                   <InstagramOutlined />
@@ -106,11 +107,19 @@ const Home: React.FC<HomeProps> = ({ sectionRefs }) => {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <AboutMe />
+          <MyExp />
         </motion.div>
-
         <motion.div
           ref={sectionRefs[2]}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
+          <AboutMe />
+        </motion.div>
+        <motion.div
+          ref={sectionRefs[3]}
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
